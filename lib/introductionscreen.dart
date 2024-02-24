@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pet_store_mobile_app/bottomNavBar.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class introductionScreen extends StatefulWidget {
@@ -14,6 +15,7 @@ class _introductionScreenState extends State<introductionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //bottomNavigationBar: const navbar(),
       body: Stack(
         children: [
           Container(
@@ -96,7 +98,7 @@ class _introductionScreenState extends State<introductionScreen> {
                             MaterialStateProperty.all<Color>(Color(0xFFE8BE13)),
                       ),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/catalog');
+                        Navigator.pushNamed(context, '/navbar');
                       },
                       child: Text(
                         'Get Started',
